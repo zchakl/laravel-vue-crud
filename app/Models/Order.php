@@ -7,5 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
-    use HasFactory;
+  use HasFactory;
+
+  /**
+ *
+ *
+ */
+
+  protected $fillable = [
+    'partNumber',
+    'description',
+    'dueDate',
+    'timeStamp',
+    'quantity',
+    'unitPrice',
+    'totalPrice'
+  ];
 }
