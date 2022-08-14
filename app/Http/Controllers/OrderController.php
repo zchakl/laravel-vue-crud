@@ -38,8 +38,8 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         Validator::make($request->all(), [
-            'title' => ['required'],
-            'body' => ['required'],
+            'partNumber' => ['required'],
+            'description' => ['required'],
         ])->validate();
    
         Order::create($request->all());
